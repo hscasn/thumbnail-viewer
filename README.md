@@ -1,6 +1,6 @@
 # Thumbnail viewer
 
-Simple library for displaying images from thumbnails without leaving the page, very lightweight and without dependencies.
+Simple library for displaying images from thumbnails without leaving the page, very lightweight (less than 2kb when minified) and without dependencies.
 
 No setup required, although you probably want to add some CSS to it. Read the Styling section in this document for details.
 
