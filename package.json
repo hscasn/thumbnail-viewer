@@ -1,0 +1,26 @@
+{
+  "name": "thumbnail-viewer",
+  "version": "0.0.1",
+  "description": "Simple library for displaying images from thumbnails without leaving the page, very lightweight and without dependencies",
+  "main": "thumbnailViewer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hscasn/thumbnail-viewer.git"
+  },
+  "keywords": [
+    "thumbnail",
+    "ligthbox",
+    "image",
+    "gallery",
+    "display"
+  ],
+  "author": "Henrique Salvadori Coelho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hscasn/thumbnail-viewer/issues"
+  },
+  "homepage": "https://github.com/hscasn/thumbnail-viewer#readme"
+}
