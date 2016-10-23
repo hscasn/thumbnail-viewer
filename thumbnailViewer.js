@@ -43,7 +43,16 @@ document.addEventListener("DOMContentLoaded", function() {
     (function (element) {
       element.addEventListener('click', function (event) {
         event.preventDefault();
-        display(element.href, element.alt);
+
+        var alt;
+
+        var containedImages = element.getElementsByTagName('img');
+
+        if (containedImages.length > 0) {
+          alt = containedImages[0].alt;
+        }
+
+        display(element.href, alt);
       });
     })(e);
   }
