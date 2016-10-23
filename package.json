@@ -1,6 +1,6 @@
 {
   "name": "thumbnail-viewer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple library for displaying images from thumbnails without leaving the page, very lightweight and without dependencies",
   "main": "thumbnailViewer.js",
   "scripts": {
