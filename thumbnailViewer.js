@@ -178,33 +178,31 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Styling overall
     //-------------------------------------------------------------------------
+    
     if (!isNaN(clientHeight)) {
-      var overallHeight = ';height:' + clientHeight + 'px';
+      overall.style.height = clientHeight + 'px';
     }
 
-    overall.style = ';position:fixed'
-                  + ';margin:0'
-                  + ';top:0'
-                  + ';left:0'
-                  + ';width: 100%'
-                  + overallHeight;
-
-    // Styling image
+    overall.style.position = 'fixed';
+    overall.style.margin   = 0;
+    overall.style.top      = 0;
+    overall.style.left     = 0;
+    overall.style.width    = '100%';
+   
+     // Styling image
     //-------------------------------------------------------------------------
     // Calculating the maximum width and height the image can have
     var maxImageWidth  = '';
     var maxImageHeight = '';
 
     if (!isNaN(clientWidth)) {
-      maxImageWidth = ';max-width:' + (clientWidth * widthFactor) + 'px';
+      image.style.maxWidth = (clientWidth * widthFactor) + 'px';
     }
     if (!isNaN(clientHeight)) {
-      maxImageHeight = ';max-height:' + (clientHeight * heightFactor) + 'px';
+      image.style.maxHeight = (clientHeight * heightFactor) + 'px';
     }
 
-    image.style = maxImageWidth + maxImageHeight;
-
-    clientImageWidth  = image.clientWidth ;
+    clientImageWidth  = image.clientWidth;
     clientImageHeight = image.clientHeight;
 
     // Styling figure
@@ -215,29 +213,21 @@ document.addEventListener("DOMContentLoaded", function() {
     var figureLeftPosition = ((clientWidth - clientImageWidth) / 2);
 
     if (!isNaN(figureTopPosition)) {
-      figureTopPosition = ';top:' + figureTopPosition + 'px';
-    }
-    else {
-      figureTopPosition = '';
+      figure.style.top = figureTopPosition + 'px';
     }
 
     if (!isNaN(figureLeftPosition)) {
-      figureLeftPosition = ';left:' + figureLeftPosition + 'px';
-    }
-    else {
-      figureLeftPosition = '';
+      figure.style.left = figureLeftPosition + 'px';      
     }
 
-    figure.style = ';position:fixed'
-                 + ';margin:0'
-                 + figureTopPosition
-                 + figureLeftPosition;
+    figure.style.position = 'fixed';
+    figure.style.margin = 0;
 
     // Styling close button
     //-------------------------------------------------------------------------
-    close.style = ';position:absolute'
-                + ';top:0'
-                + ';right:0';
+    close.style.position = 'absolute';
+    close.style.top = 0;
+    close.style.right = 0;
   }
 
 
