@@ -181,7 +181,6 @@ document.addEventListener("DOMContentLoaded", function() {
     
     if (!isNaN(clientHeight)) {
       overall.style.height = clientHeight + 'px';
-      var overallHeight = ';height:' + clientHeight + 'px';
     }
 
     overall.style.position = 'fixed';
@@ -189,7 +188,6 @@ document.addEventListener("DOMContentLoaded", function() {
     overall.style.top      = 0;
     overall.style.left     = 0;
     overall.style.width    = '100%';
-    overall.style.height   = overallHeight;
    
      // Styling image
     //-------------------------------------------------------------------------
