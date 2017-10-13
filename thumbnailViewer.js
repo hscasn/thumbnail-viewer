@@ -69,6 +69,10 @@ document.addEventListener("DOMContentLoaded", function() {
     var image   = getImage(url, alt);
     var close   = getClose();
 
+    function reStyle() {
+      style(overall, figure, image, close);
+    }
+
     // We mount the elements one inside the other, set their
     // display style as hidden (we still have to style them),
     // append the figure in the body, remove other thumbnails
@@ -80,7 +84,9 @@ document.addEventListener("DOMContentLoaded", function() {
     document.body.appendChild(overall);
     clearActiveElements();
     activeElements.push(overall);
-    style(overall, figure, image, close);
+    reStyle();
+    image.addEventListener('load', reStyle);
+    window.addEventListener('resize', reStyle);
     show(overall);
   }
 
@@ -211,6 +217,9 @@ document.addEventListener("DOMContentLoaded", function() {
                           * topOffset;
 
     var figureLeftPosition = ((clientWidth - clientImageWidth) / 2);
+
+    console.log(clientImageWidth);
+    console.log(clientWidth);
 
     if (!isNaN(figureTopPosition)) {
       figure.style.top = figureTopPosition + 'px';
