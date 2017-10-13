@@ -1,6 +1,8 @@
 # Thumbnail viewer
 
-Simple library for displaying images from thumbnails without leaving the page, very lightweight (less than 2kb when minified) and without dependencies.
+I am tired of huge libraries for simply displaying a modal with thumbnails. This
+one is less than 2kb, has no dependencies, and is super fast. Use this library
+to display images without leaving the page.
 
 No setup required, although you probably want to add some CSS to it. Read the Styling section in this document for details.
 
@@ -34,7 +36,10 @@ Your thumbnails should follow this DOM structure:
   ...your thumbnail goes here...
 </a>
 ```
-In other words, include the class "thumbnail viewer" in a link that contains the image url as the HREF attribute.
+
+Done.
+
+In other words, include the class "thumbnail-viewer" in a link that contains the image url as the HREF attribute.
 
 If you have an "img" tag inside the "a" element, the library will recover its ALT attribute, which will be used for the image displayed.
 ```
